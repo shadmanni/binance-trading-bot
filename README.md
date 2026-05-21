@@ -6,18 +6,24 @@ A clean, modular Python CLI bot for placing orders on the Binance USDT-M Futures
 
 # Project Structure
 
+# Project Structure
+
 ```text
 binance-trading-bot/
 ├── bot/
-│   ├── client.py          # Binance REST API wrapper (signing + requests)
-│   ├── orders.py          # Order placement logic + formatted console output
-│   ├── validators.py      # Input validation
-│   └── logging_config.py  # Structured logging (file + colored console)
+│   ├── client.py             # Binance REST API wrapper (signing + requests)
+│   ├── orders.py             # Order placement logic + formatted console output
+│   ├── validators.py         # Input validation
+│   └── logging_config.py     # Structured logging configuration
+│
 ├── logs/
-│   └── trading_bot.log    # Auto-created on first run
-├── .env                   # Environment variables (not committed)
+│   ├── market_order.log      # Sample MARKET order logs
+│   ├── limit_order.log       # Sample LIMIT order logs
+│   └── trading_bot.log       # Runtime log file (auto-generated)
+│
+├── .env                      # Environment variables (not committed)
 ├── .gitignore
-├── cli.py                 # CLI entry point
+├── cli.py                    # CLI entry point
 ├── requirements.txt
 └── README.md
 ```
@@ -150,6 +156,13 @@ All activity is written to:
 ```text
 logs/trading_bot.log
 ```
+## Sample Logs Included
+
+The repository includes:
+- `logs/market_order.log`
+- `logs/limit_order.log`
+
+to demonstrate successful API interactions and logging output.
 
 Includes:
 - API requests and responses
