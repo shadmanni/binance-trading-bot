@@ -1,0 +1,5 @@
+2026-05-21 20:30:18 | INFO     | cli | CLI invoked: symbol=BTCUSDT side=SELL type=LIMIT qty=0.001 price=90000
+2026-05-21 20:30:18 | INFO     | orders | Placing SELL LIMIT order | symbol=BTCUSDT qty=0.001 price=90000.0
+2026-05-21 20:30:18 | DEBUG    | binance_client | POST https://demo-fapi.binance.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 90000.0, 'timeInForce': 'GTC', 'timestamp': 1779375618806}
+2026-05-21 20:30:19 | DEBUG    | binance_client | Response [200]: {"orderId":13172706603,"symbol":"BTCUSDT","status":"NEW"}
+2026-05-21 20:30:19 | INFO     | orders | Order placed successfully: orderId=13172706603 status=NEW

@@ -1,0 +1,5 @@
+2026-05-21 20:23:58 | INFO     | cli | CLI invoked: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2026-05-21 20:23:58 | INFO     | orders | Placing BUY MARKET order | symbol=BTCUSDT qty=0.001 price=None
+2026-05-21 20:23:58 | DEBUG    | binance_client | POST https://demo-fapi.binance.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1779375238967}
+2026-05-21 20:24:01 | DEBUG    | binance_client | Response [200]: {"orderId":13172684998,"symbol":"BTCUSDT","status":"NEW"}
+2026-05-21 20:24:01 | INFO     | orders | Order placed successfully: orderId=13172684998 status=NEW

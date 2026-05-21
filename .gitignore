@@ -1,4 +1,6 @@
 .env
 __pycache__/
 *.pyc
-logs/
+logs/*.log
+!logs/market_order.log
+!logs/limit_order.log
